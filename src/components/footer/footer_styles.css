@@ -14,7 +14,6 @@ p.design__copyright {
 
 a.design__link {
     color: #FF9900;
-    font-weight: 600;
 }
 
 @media screen and (max-width: 489px) {
@@ -31,7 +30,7 @@ a.design__link {
     footer.footer__bg {
         padding: 10px;
     }
-    
+
     p.design__copyright {
         font-size: 10px;
     }
