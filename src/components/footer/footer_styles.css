@@ -16,3 +16,23 @@ a.design__link {
     color: #FF9900;
     font-weight: 600;
 }
+
+@media screen and (max-width: 489px) {
+    footer.footer__bg {
+        padding: 16px;
+    }
+
+    p.design__copyright {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 198px) {
+    footer.footer__bg {
+        padding: 10px;
+    }
+    
+    p.design__copyright {
+        font-size: 10px;
+    }
+}
