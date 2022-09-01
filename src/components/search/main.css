@@ -81,13 +81,36 @@ div.anime__search__meta p.h5 {
     }
 }
 
+@media screen and (max-width: 890px) {
+    section.search {
+        background: url("../images/anime-scraper-background.png") no-repeat;
+        background-position: 200px;
+    }
+
+    h1.anime__title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    section.search {
+        background: url("../images/anime-scraper-background.png") no-repeat;
+        background-position: 180px;
+    }
+}
+
 @media screen and (max-width: 489px) {
+    section.search {
+        background: url("../images/luffy-mobile-background.png") no-repeat;
+        background-position: 0px 500px;
+    }
+
     div.anime__search {
         padding-top: 60px;
     }
 
     h1.anime__title {
-        font-size: 46px;
+        font-size: 42px;
     }
 
     h4.anime__subtitle {
@@ -109,6 +132,10 @@ div.anime__search__meta p.h5 {
 }
 
 @media screen and (max-width: 320px) {
+    h1.anime__title {
+        font-size: 32px;
+    }
+
     h4.anime__subtitle {
         font-size: 16px;
     }
