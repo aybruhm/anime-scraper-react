@@ -10,11 +10,9 @@ const Home = () => {
             {/* Main */}
             <section className="search">
 
-
                 {/* Navbar */}
                 <Navbar />
                 {/* End of Navbar */}
-
 
                 <div className="container">
 
