@@ -6719,7 +6719,7 @@ fieldset:disabled .btn {
 /*!rtl:end:ignore*/
 .carousel-fade .carousel-item {
   opacity: 0;
-  transition-property: opacity;
+  transition: opacity;
   transform: none
 }
 
@@ -17797,7 +17797,7 @@ fieldset:disabled .btn-group-vertical {
   position: absolute;
   touch-action: none;
   transform: scale(0);
-  transition-property: transform, opacity;
+  transition: transform, opacity;
   transition-timing-function: cubic-bezier(0, 0, .15, 1), cubic-bezier(0, 0, .15, 1);
   z-index: 999
 }
