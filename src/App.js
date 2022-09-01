@@ -1,23 +1,25 @@
-import './App.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import './index.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// Component Imports
+import Home from "../src/components/search/Home.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <div className="App">
+    <BrowserRouter>
+      <div className="App">
 
-          <Routes>
+        <Routes>
 
-            {/* Main Pages */}
-            {/* <Route path="/" component={<Home />} element={<Home />}></Route> */}
-            {/* End of Main Pages */}
+          {/* Main Pages */}
+          <Route path="/" component={<Home />} element={<Home />}></Route>
+          {/* End of Main Pages */}
 
-          </Routes>
+        </Routes>
 
-        </div>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
