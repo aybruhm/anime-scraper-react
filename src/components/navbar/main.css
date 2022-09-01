@@ -1,0 +1,23 @@
+nav.navbar {
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 0%),
+    0 0 0 rgb(0 0 0 / 0%);
+    padding-top: 20px;
+}
+
+a.nav__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 46px;
+    color: #FF9900;
+}
+
+a.nav__link > span.anime__scraper {
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 198px) {
+    nav.navbar {
+        display: none;
+    }
+}
