@@ -25,9 +25,9 @@ const SearchResults = () => {
                 <div className="results container">
                     <div className="results__head">
                         <h2 className="result__title">
-                            Search <span className="anime__scraper">Scraper</span>
+                            Search <span className="anime__scraper">Results</span>
                         </h2>
-                        <p className="h5">These are the results we found bearing the name “Naruto the movie”</p>
+                        <p className="h5">These are the results we found bearing the name: “Naruto the movie”</p>
                     </div>
 
                     <div className="results__row row">
