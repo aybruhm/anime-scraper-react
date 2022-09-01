@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./footer_styles.css";
 
 
@@ -7,7 +8,7 @@ const Footer = () => {
         <>
             <footer className="footer__bg">
                 <p className="design__copyright">
-                    Designed by <a href="#" target="_blank" className="design__link">the UX Guy</a>
+                    Designed by <Link to="https://" target="_blank" className="design__link">the UX Guy</Link>
                 </p>
             </footer>
         </>

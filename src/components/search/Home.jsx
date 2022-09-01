@@ -18,7 +18,7 @@ const Home = () => {
 
                     <div className="anime__search">
                         <h1 className="anime__title">
-                            Anime <span className="anime__scraper">Scraper</span>
+                            Anime<span className="anime__scraper">sukurepa</span>
                         </h1>
 
                         <h4 className="anime__subtitle">

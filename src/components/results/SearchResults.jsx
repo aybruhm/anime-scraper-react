@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./search_results.css";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
@@ -45,9 +46,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -65,9 +66,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -85,9 +86,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -105,9 +106,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -125,9 +126,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -145,9 +146,9 @@ const SearchResults = () => {
                                     https://www.imdb.com/name/nm0645513/?ref_=ttls_li_dr_0of
                                 </p>
 
-                                <a href="" className="anime__result__link">
+                                <Link to="" className="anime__result__link">
                                     Click to continue <i class="fa fa-link" aria-hidden="true"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
