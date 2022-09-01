@@ -10,7 +10,7 @@ import SearchResults from "./components/results/SearchResults";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <>
 
         <Routes>
 
@@ -21,7 +21,7 @@ function App() {
 
         </Routes>
 
-      </div>
+      </>
     </BrowserRouter>
   );
 }

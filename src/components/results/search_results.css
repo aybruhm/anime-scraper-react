@@ -1,0 +1,84 @@
+section.search__results {
+    height: 100vh;
+    text-align: left;
+}
+
+div.results {
+    padding-top: 60px;
+}
+
+h2.result__title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 71px;
+    margin-bottom: 0%;
+    color: #FF9900;
+}
+
+span.anime__scraper {
+    font-family: 'Poppins';
+    color: #FFFFFF !important;
+}
+
+div.results__head p.h5 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+div.results__row {
+    padding: 60px 0px 30px 0px;
+}
+
+div.result__col {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+div.result__col div.head {
+    padding-right: 40px;
+}
+
+div.result__col div.head img.img-responsive {
+    height: 150px;
+    width: 150px;
+}
+
+div.result__col div.body h4.anime__result__title {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+div.result__col div.body p.anime__result__mute {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0.6rem;
+    color: #0085FF;
+}
+
+div.result__col div.body a.anime__result__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+div.result__meta {
+    padding-bottom: 60px;
+}
+
+div.result__meta p.h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
