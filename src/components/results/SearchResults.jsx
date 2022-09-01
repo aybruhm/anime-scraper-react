@@ -47,7 +47,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>
@@ -147,7 +147,7 @@ const SearchResults = () => {
                                 </p>
 
                                 <Link to="" className="anime__result__link">
-                                    Click to continue <i class="fa fa-link" aria-hidden="true"></i>
+                                    Click to continue <i className="fa fa-link" aria-hidden="true"></i>
                                 </Link>
                             </div>
                         </div>

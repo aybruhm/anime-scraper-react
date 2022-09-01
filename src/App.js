@@ -1,5 +1,5 @@
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import './index.css';
+import "./assets/css/mdb.min.css";
+import "./assets/css/index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Component Imports
