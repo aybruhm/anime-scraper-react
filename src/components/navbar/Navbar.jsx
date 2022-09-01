@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "./main.css"
+import "./navbar_styles.css"
 
 
 const Navbar = () => {
@@ -9,8 +9,8 @@ const Navbar = () => {
             <nav className="navbar">
 
                 <div className="container">
-                    <Link className="navbar-brand me-2 mb-1 nav__link" to=".">
-                        Anime <span className="anime__scraper">Scraper</span>
+                    <Link className="navbar-brand me-2 mb-1 nav__link" to="/">
+                        Anime<span className="anime__scraper">sukurepa</span>
                     </Link>
                 </div>
 
