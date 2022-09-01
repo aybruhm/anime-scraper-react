@@ -2,7 +2,7 @@
 Find and download anime with ease
 
 ## screenshot
-![anime-scraper-screenshot](https://user-images.githubusercontent.com/55067204/187947313-8f0ea7c8-5ec9-493a-ae54-554cba5115e5.png)
+![anime-scraper-screenshot](https://user-images.githubusercontent.com/55067204/187982629-93dd484c-ac26-490f-9819-217641367e0b.png)
 
 ## design credit
 - [author](https://www.behance.com/martinmadami)
