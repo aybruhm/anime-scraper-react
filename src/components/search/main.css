@@ -114,7 +114,7 @@ div.anime__search__meta p.h5 {
     }
 
     h4.anime__subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     input.search__input {
@@ -126,8 +126,8 @@ div.anime__search__meta p.h5 {
     }
 
     div.anime__search__meta p.h5 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 18px;
     }
 }
 
