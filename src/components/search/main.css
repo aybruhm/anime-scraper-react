@@ -1,7 +1,7 @@
 section.search {
     background: url("../images/anime-scraper-background.png") no-repeat;
-    height: 100vh;
     background-position: 1100px;
+    height: 100vh;
     text-align: left;
 }
 
@@ -100,9 +100,12 @@ div.anime__search__meta p.h5 {
 }
 
 @media screen and (max-width: 489px) {
-    section.search {
+    /* section.search {
         background: url("../images/luffy-mobile-background.png") no-repeat;
         background-position: 0px 500px;
+    } */
+    section.search {
+        height: 60vh !important;
     }
 
     div.anime__search {
