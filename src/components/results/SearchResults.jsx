@@ -11,6 +11,10 @@ import Footer from "../footer/Footer";
 
 const SearchResults = ({ results, title }) => {
 
+    const refreshPage = () => {
+        window.location.reload();
+    }
+
     return (
         <div>
             <section className="search__results">
@@ -24,6 +28,8 @@ const SearchResults = ({ results, title }) => {
                         <h4 className="result__title">
                             Search <span className="anime__scraper">Results</span>
                         </h4>
+                        <h5 className="result__home" onClick={refreshPage}>Go back <i class="fa fa-home" aria-hidden="true"></i>
+                        </h5>
                         <p className="h5">These are the results we found bearing the name: <b>“{title}”</b></p>
                     </div>
 
