@@ -100,12 +100,10 @@ div.anime__search__meta p.h5 {
 }
 
 @media screen and (max-width: 489px) {
-    /* section.search {
+    section.search {
         background: url("../images/luffy-mobile-background.png") no-repeat;
         background-position: 0px 500px;
-    } */
-    section.search {
-        height: 60vh !important;
+        height: 100vh !important;
     }
 
     div.anime__search {
