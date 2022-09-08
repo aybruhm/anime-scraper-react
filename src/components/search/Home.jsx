@@ -18,14 +18,18 @@ const Home = () => {
     const [anime, setAnime] = useState('');
     const [results, setAnimeResults] = useState([]);
 
+    // set submit button state
+    const [submitting, isSubmitting] = useState(Boolean);
+
+    // set error handling
+    const [formErr, setFormErr] = useState(Boolean);
+    const [networkErr, setNetworkErr] = useState('');
+
     // function to handle anime change
     const handleAnimeChange = (event) => {
 
         // set anime state to the event value
         setAnime(event.target.value);
-
-        // clear input value
-        event.target.value = "";
     };
 
     // function to search for an anime
@@ -33,6 +37,9 @@ const Home = () => {
 
         // prevent default behaviour of form
         event.preventDefault();
+
+        // set the submit button state
+        isSubmitting(!submitting);
 
         // baseURL
         const baseURL = "https://animesukurepa.up.railway.app/api/v1/";
@@ -56,59 +63,93 @@ const Home = () => {
                 setAnimeResults(animesJson);
             })
             .catch((err) => {
-                console.log("Erorr: ", err);
+
+                // set the form error to true
+                setFormErr(!formErr)
+
+                // set the nework error to the below message
+                setNetworkErr("Oops, looks like you have bad network. Try again.. :-)")
+
+                // set a 3s timer
+                setTimeout(() => {
+                    // refresh window location
+                    window.location.reload();
+                }, 3000);
             });
     };
 
     return (
         <>
+            {
+                // if the result length is greater than 0, 
+                // show the search results
+                results.length > 0
 
-            {/* Main */}
-            <section className="search">
+                    ?
+                    // Search Results
+                    <SearchResults results={results} title={anime} />
 
-                {/* Navbar */}
-                <Navbar />
-                {/* End of Navbar */}
+                    // else, show the search
+                    :
 
-                <div className="container">
+                    // Search Section
+                    <section className="search">
 
-                    <div className="anime__search">
-                        <h1 className="anime__title">
-                            Anime<span className="anime__scraper">sukurepa</span>
-                        </h1>
+                        {/* Navbar  */}
+                        <Navbar />
 
-                        <h4 className="anime__subtitle">
-                            Find and download anime with ease
-                        </h4>
+                        <div className="container">
 
-                        <form onSubmit={AnimeSearch}>
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    className="search__input"
-                                    placeholder="What are you looking for?"
-                                    onChange={handleAnimeChange}
-                                    value={anime}
-                                />
+                            <div className="anime__search">
+                                <h1 className="anime__title">
+                                    Anime<span className="anime__scraper">sukurepa</span>
+                                </h1>
+
+                                <h4 className="anime__subtitle">
+                                    Find and download anime with ease
+                                </h4>
+
+                                <form onSubmit={AnimeSearch}>
+
+                                    {/* Error Message */}
+                                    <div className={formErr ? 'form-group' : 'd-none'}>
+                                        <p className="alert alert-danger">{networkErr}</p>
+                                    </div>
+
+                                    <div className="form-group">
+                                        <input
+                                            type="text"
+                                            className="search__input"
+                                            placeholder="What are you looking for?"
+                                            onChange={handleAnimeChange}
+                                            value={anime}
+                                            required
+                                        />
+                                    </div>
+
+                                    <div className="form-group">
+                                        {/* Disables the form when it has been clicked */}
+                                        <button disabled={submitting} type="submit" className="search__btn">
+                                            {
+                                                submitting
+                                                    ?
+                                                    <span className="spinner-grow spinner-grow-md"></span>
+                                                    :
+                                                    <span>Submit</span>
+                                            }
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
 
-                            <div className="form-group">
-                                <button type="submit" className="search__btn">Search</button>
+                            <div className="anime__search__meta">
+                                <p className="h5">Let us help you find anime with no sweat.</p>
+                                <p className="h5">Tell us what you want and we'd bring it to you.</p>
                             </div>
-                        </form>
-                    </div>
-
-                    <div className="anime__search__meta">
-                        <p className="h5">Let us help you find anime with no sweat.</p>
-                        <p className="h5">Tell us what you want and we'd bring it to you.</p>
-                    </div>
-                </div>
-            </section>
-            {/* End of Main */}
-
-            {/* Search Results */}
-            {results.length > 0 ? <SearchResults results={results} /> : "" }
-            {/* End of Search Results */}
+                        </div>
+                    </section>
+                // end if-else condition
+            }
         </>
     )
 }
