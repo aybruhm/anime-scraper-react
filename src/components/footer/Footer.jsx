@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <footer className="footer__bg">
                 <p className="design__copyright">
-                    Designed by <a href="https://www.behance.com/martinmadami" rel="noreferrer" target="_blank" className="design__link">the UX Guy</a>
+                    Designed by <a href="https://www.behance.net/martinmadami" rel="noreferrer" target="_blank" className="design__link">the UX Guy</a>
                 </p>
             </footer>
         </>
