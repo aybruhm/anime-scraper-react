@@ -1,11 +1,15 @@
+// React Imports
 import React from 'react';
-import { Link } from "react-router-dom";
+
+// Style Imports
 import "./search_results.css";
+
+// Component Imports
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 
 
-const SearchResults = ({ results }) => {
+const SearchResults = ({ results, title }) => {
 
     return (
         <div>
@@ -20,7 +24,7 @@ const SearchResults = ({ results }) => {
                         <h4 className="result__title">
                             Search <span className="anime__scraper">Results</span>
                         </h4>
-                        <p className="h5">These are the results we found bearing the name: “Naruto the movie”</p>
+                        <p className="h5">These are the results we found bearing the name: <b>“{title}”</b></p>
                     </div>
 
                     <div className="results__row row">
@@ -39,13 +43,13 @@ const SearchResults = ({ results }) => {
                                         {result.release}
                                     </p>
 
-                                    <Link to={result.anime_link} className="anime__result__link">
+                                    <a href={result.anime_link} className="anime__result__link">
                                         Click to continue <i className="fa fa-link" aria-hidden="true"></i>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         )
-                        )};
+                        )}
                     </div>
 
                     <div className="result__meta">
