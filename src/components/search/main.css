@@ -5,6 +5,12 @@ section.search {
     text-align: left;
 }
 
+.alert {
+    border-radius: 0.2rem;
+    padding: 15px 20px;
+    width: 50%;
+}
+
 div.anime__search {
     padding-top: 200px;
 }
@@ -100,6 +106,10 @@ div.anime__search__meta p.h5 {
 }
 
 @media screen and (max-width: 489px) {
+    .alert {
+        width: 100% !important;
+    }
+
     section.search {
         background: url("../images/luffy-mobile-background.png") no-repeat;
         background-position: 0px 500px;
