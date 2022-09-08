@@ -16,6 +16,11 @@ h4.result__title {
     color: #FF9900;
 }
 
+h5.result__home {
+    color: #bb8f4e;
+    cursor: pointer;
+}
+
 span.anime__scraper {
     font-family: 'Poppins';
     color: #FFFFFF !important;
