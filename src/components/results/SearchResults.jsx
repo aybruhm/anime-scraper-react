@@ -28,9 +28,10 @@ const SearchResults = ({ results, title }) => {
                         <h4 className="result__title">
                             Search <span className="anime__scraper">Results</span>
                         </h4>
-                        <h5 className="result__home" onClick={refreshPage}>Go back <i class="fa fa-home" aria-hidden="true"></i>
-                        </h5>
                         <p className="h5">These are the results we found bearing the name: <b>“{title}”</b></p>
+                
+                        <h5 className="result__home mb__d-none" onClick={refreshPage}>Go back <i class="fa fa-home" aria-hidden="true"></i>
+                        </h5>
                     </div>
 
                     <div className="results__row row">
@@ -62,6 +63,9 @@ const SearchResults = ({ results, title }) => {
                         <p className="h5">
                             This is all we found. Click which ever you want and there you go.
                         </p>
+
+                        <h5 className="result__home mb__lg-none" onClick={refreshPage}>Go back <i class="fa fa-home" aria-hidden="true"></i>
+                        </h5>
                     </div>
                 </div>
 

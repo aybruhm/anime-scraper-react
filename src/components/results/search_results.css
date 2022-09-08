@@ -3,6 +3,10 @@ section.search__results {
     text-align: left;
 }
 
+.mb__lg-none {
+    display: none;
+}
+
 div.results {
     padding-top: 60px;
 }
@@ -117,6 +121,11 @@ div.result__meta p.h5 {
         padding-bottom: 10px;
     }
 
+    .mb__lg-none {
+        display: block !important;
+        font-size: 18px;
+    }
+
     h2.result__title {
         font-size: 38px;
     }
@@ -168,6 +177,10 @@ div.result__meta p.h5 {
 
     div.result__meta {
         padding-bottom: 30px;
+    }
+
+    .mb__d-none {
+        display: none;
     }
 }
 
